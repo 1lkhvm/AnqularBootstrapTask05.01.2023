@@ -1,0 +1,130 @@
+.navbar-container {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .navbar-logo {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+
+            a:hover {
+                color: gray;
+            }
+        }
+
+        .navbar-menu {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+
+            ul {
+                display: flex;
+                gap: 40px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-size: 15px;
+                        cursor: pointer;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: gray;
+                    }
+
+                    i {
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+
+        .navbar-hamb-menu {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0);
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .navbar-logo {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: rgb(0, 0, 0);
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    color: gray;
+                }
+            }
+
+            .navbar-menu {
+                width: 50%;
+                display: none;
+                justify-content: space-evenly;
+
+                ul {
+                    display: flex;
+                    gap: 40px;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            font-size: 15px;
+                            cursor: pointer;
+                        }
+
+                        a:hover {
+                            color: gray;
+                        }
+                    }
+
+                }
+            }
+
+            .navbar-hamb-menu {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+}
