@@ -1,7 +1,7 @@
 import React from 'react'
-    import {
-        createBrowserRouter,
-    } from "react-router-dom";
+import {
+    createBrowserRouter,
+} from "react-router-dom";
 import Home from '../Page/Home';
 import About from '../Page/About'
 const router = createBrowserRouter([
@@ -9,11 +9,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
     },
-     {
-         path: "/about",
-         element: <About></About>,
-     }
-    
+    {
+        path: "/about",
+        element: <About></About>,
+    }
+
+
 ]);
 
 export default router
